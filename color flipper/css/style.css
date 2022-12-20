@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f1f5f8;
+  transition: background-color .1s ease-in-out
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+header {
+  box-shadow: 0 0 20px #999;
+  background-color: #fff;
+}
+
+.fixed-width,
+ul {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+}
+
+.page-title a,
+.color,
+li a:hover {
+  color: rgb(39, 143, 204);
+}
+
+li a {
+  color: #222;
+}
+
+.page-title {
+  font-size: 25px;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 15px;
+}
+nav {
+  font-weight: bold;
+}
+
+main {
+  height: 41.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.fixed-width .content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+main .fixed-width h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 800px;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #333;
+  color: transparent;
+  text-shadow: 0 0 3px #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-size: 15px;
+  transition: text-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  text-shadow: 0 0 0px #000;
+  transition: text-shadow 0.15s ease-in-out;
+}
+
+.active {
+  text-shadow: 0 0 0px #000;
+}
+
+#stopBtn {
+  display: none;
+}
