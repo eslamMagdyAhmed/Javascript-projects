@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(0, 0, 255, 0.07);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-transform: capitalize;
+}
+
+main {
+  width: 700px;
+  text-align: center;
+  height: 350px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(255, 153, 0);
+}
+
+.question {
+  background: #fff;
+  padding: 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 70px;
+  box-shadow: 0px 9px 10px 0 #ddd;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.question:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.content-show {
+  height: 200px;
+}
+
+.answer {
+  border-top: 1px solid #aaa;
+  padding: 20px 0;
+  color: #aaa
+}
+
+.btn {
+  flex:none;
+  background: transparent;
+  border: 2px solid rgb(255, 153, 0);
+  font-size: 20px;
+  color: rgb(255, 153, 0);
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: transform 0.15s linear;
+  -webkit-transition: transform 0.15s linear;
+  -moz-transition: transform 0.15s linear;
+  -ms-transition: transform 0.15s linear;
+  -o-transition: transform 0.15s linear;
+}
+
+.btn:hover {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
