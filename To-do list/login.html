@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo - Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <main>
+        <div class="login-form">
+            <label class="login-title">Login</label>
+            <input type="text" name ="Email" id="email" placeholder="Email" autofocus>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <p class="message"></p>
+            <button id="login">Login</button>
+            <div style = "text-align: center;">OR</div>
+            <button id="sign-up">Sign up</button>
+            <p>Do you Forget your password?<a href="#" id = "forgot-btn">Click Here</a></p>
+        </div>
+        <div class="forget-password">
+            <label class="login-title">Reset password</label>
+            <input type="text" name="check-Email" id="check-email" placeholder="Your Email">
+            <input type="password" name="forgot-password" id="forgot-password" placeholder="New Password">
+            <p class="message"></p>
+            <button id="confirm">Confirm</button>
+            <a href="./login.html" style= "text-align: center;">Back</a>
+        </div>
+    </main>
+    <script type = 'module'src="./login.js"></script>
+</body>
+</html>

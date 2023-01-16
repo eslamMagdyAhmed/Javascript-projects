@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #f6d365, #fda085);
+}
+
+main {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    row-gap: 50px;
+}
+
+h1 {
+    color: #fff
+}
+
+button {
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.todo-area {
+    display: flex;
+}
+
+.add-todo {
+    display: flex;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.add-todo > * {
+    border: none;
+    padding: 6px 10px;
+}
+
+.logout {
+    text-decoration: none;
+    font-weight: bold;
+    color:#000;
+    background-image: linear-gradient(to right, #fbff25, #f8be1d);
+    padding: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    border-radius: 16px;
+    width: 147px;
+    right: 10px;
+    top: 10px;
+    border: 3px solid #eee;
+}
+
+.logout:hover::before {
+    left: 10%;
+    border-radius: 15px;
+}
+
+.logout::before {
+    content: "LOGOUT";
+    background-image: linear-gradient(to bottom,#fff, #888, #fff);
+    padding: 5px 25px;
+    position: absolute;
+    font-size: 13px;
+    top: 23%;
+    left: -3px;
+    border-radius: 5px 15px 15px 2px;
+    border-top: 2px solid #000;
+    transition: all .2s ease-in-out;
+}
+
+.add-todo > *:focus {
+    outline: none;
+}
+
+#todo-input {
+    font-size: 20px;
+}
+
+select {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.add-btn {
+    color: #fff;
+    background-color: #db8a73;
+    font-size: 16px;
+    box-shadow: 0 0 2px 5px #fff inset;
+}
+
+.add-btn:hover, .add-btn:focus {
+    background-color: #fff;
+    color: #db8a73;
+    box-shadow: 0 0 2px 5px #db8a73 inset;
+}
+
+section {
+    min-width: 500px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+ul li p {
+    padding: 0 10px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+ul li .delete-btn {
+    background-color: rgb(204, 73, 73);
+}
+
+ul li .delete-btn:hover {
+    background-color: rgb(204, 30, 30);
+}
+
+ul li .complete-btn {
+    background-color: rgb(73, 204, 73);
+}
+
+ul li .complete-btn:hover {
+    background-color: rgb(30, 204, 30);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.completed {
+    opacity: .5;
+}
+

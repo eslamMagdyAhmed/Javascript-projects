@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todos.css">
+</head>
+
+<body>
+    <main>
+        <button class="logout"></button>
+        <h1 class="title">Todo List</h1>
+        <div class="todo-area">
+            <div class="add-todo">
+                <input type="text" name="todo" id="todo-input">
+                <button class="add-btn">+</button>
+            </div>
+            <select id="todo-filter">
+                <option value="All">All</option>
+                <option value="checked">Checked</option>
+                <option value="uncheked">Uncheked</option>
+            </select>
+        </div>
+        <section class="todo-list">
+            <ul></ul>
+        </section>
+    </main>
+
+    <script src="todos.js"></script>
+</body>
+</html>

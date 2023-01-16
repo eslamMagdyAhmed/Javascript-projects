@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="App">
+        <nav>
+            <button id="register">Register</button>
+            <a href="./login.html" id="login"></a>
+        </nav>
+        <main>
+            <div class="form create">
+                <div class="error-msg"></div>
+                <input type="text" name="firstName" id="first-name" placeholder="First name" maxlength = "20">
+                <input type="text" name="surName" id="sur-name" placeholder="Surname" maxlength = "20">
+                <div class="number-container" >
+                    <select class="country-name" name ="counties" id = "countries"></select>
+                    <input type="tel" name="dial-code" id="dial-code" maxlength = "5" disabled>
+                    <input type="number" name="phone-number" id="phone-number" placeholder="Phone number" maxlength = "10">
+                </div>
+                <input type="password" name="password" id="password" placeholder="New password" maxlength = "10">
+                <input type="email" name="Email" id="email" placeholder="Email" maxlength = "30">
+                <button id="add">Add</button>
+            </div>
+            <div id= "list">
+                
+            </div>
+        </main>
+    </div>
+    <script type = "module" src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to bottom, #3499ff, #650279);
+    background-size:100%
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+
+}
+
+.login-form, .forget-password {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.login-form input, .forget-password input {
+    padding: 10px;
+    font-weight: 16px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+    color:#000;
+    margin: 10px 0;
+}
+
+
+.login-form input:focus, .forget-password input:focus {
+    outline: none;
+    
+}
+
+
+.login-form button, .forget-password button {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 26px;
+    font-weight: bold;
+    background-color: #6454f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.login-form button:hover, .forget-password button:hover {
+    background-color: #473cad;
+}
+
+.forget-password {
+    display: none;
+}
+
+.message {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    margin: 10px 0;
+}
